@@ -1,8 +1,14 @@
 //! how much of each coin
-const pennies = 100;
-const nickels = 100;
-const dimes = 100;
-const quarters = 100;
+const pennies = Number(prompt(`Amount of pennies:`));
+const nickels = Number(prompt(`Amount of nickles:`));
+const dimes = Number(prompt(`Amount of dimes:`));
+const quarters = Number(prompt(`Amount of quarter:`));
+
+//! prompt if cancled
+if (pennies === null) pennies = 0;
+if (nickels === null) nickels = 0;
+if (dimes === null) dimes = 0;
+if (quarters === null) quarters = 0;
 
 //! value of each coin
 const penniesValue = 0.01;
